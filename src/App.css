@@ -1,0 +1,387 @@
+@reference "./index.css";
+
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid transparent;
+    z-index: 999;
+}
+
+.main-header.scroll {
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.main-header .logo {
+    width: 100px;
+    transition: all 0.3s ease-in-out;
+}
+
+.main-header.scroll .logo {
+    width: 80px;
+}
+
+.main-header .navbar-nav {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 15px;
+}
+
+.main-header .navbar-nav:nth-child(1) {
+    flex: 1;
+}
+
+.main-header .navbar-nav li a {
+    font-family: 'DIN Pro', sans-serif;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: capitalize;
+    display: inline-flex;
+    align-items: center;
+}
+
+.inner-banner {
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 170px 0 80px;
+    text-align: center;
+}
+
+.step-card .index {
+    color: #333333;
+    font-family: 'DIN Pro';
+    font-weight: 500;
+}
+
+.step-card p {
+    color: #93908B;
+    font-family: 'DIN Pro';
+    font-size: 16px
+}
+
+.ambassador-application-form p {
+    @apply text-sm;
+    font-family: 'DIN Pro';
+    width: 70%;
+}
+
+.ambassador-application-form .info {
+    font-family: 'DIN Pro';
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.ambassador-application-form .checkbox-field label,
+.ambassador-application-form .input-field label {
+    margin-bottom: 5px;
+    display: block;
+    font-family: 'DIN Pro';
+}
+
+.ambassador-application-form .input-field input,
+.ambassador-application-form .input-field textarea {
+    font-family: 'DIN Pro';
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    color: #000;
+    outline: none;
+    padding: 8px 10px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.ambassador-application-form .input-field textarea {
+    height: 200px;
+    resize: nonel
+}
+
+.ambassador-application-form .checkbox-field {
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.ambassador-application-form button {
+    background-color: #98B4E7;
+    color: #000;
+    padding: 10px 20px;
+    display: block;
+    font-family: 'DIN Pro';
+    font-weight: 500;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+.footer-section {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-section .newsletter-form {
+    display: flex;
+    align-items: stretch;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.footer-section .newsletter-form input {
+    flex: 1;
+    background-color: #0A0705;
+    font-family: 'DIN Pro';
+    font-weight: 500;
+    font-size: 14px;
+    outline: none;
+    padding: 7px 10px;
+    border: 1px solid #1D1A17;
+}
+
+.footer-section .newsletter-form button {
+    background-color: #9F272A;
+    font-family: 'DIN Pro';
+    font-weight: 700;
+    font-size: 16px;
+    padding: 7px 20px;
+    cursor: pointer;
+}
+
+.footer-section .copyright {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+    color: #948E89;
+    font-family: 'DIN Pro';
+    font-size: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-section .copyright a {
+    color: #fff;
+}
+
+.footer-section h5 {
+    font-family: 'DIN Pro';
+    color: #9F272A;
+    font-size: 20px;
+
+}
+
+.footer-section ul li a {
+    font-family: 'DIN Pro';
+    color: #948E89;
+}
+
+.faq-listing .faq-card h4 {
+    font-family: 'DIN Pro';
+    color: #F0F0F0;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.faq-listing .faq-card p {
+    margin-top: 10px;
+}
+
+.faq-listing .faq-card {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 10px 0;
+}
+
+.home-banner {
+    position: relative;
+    background-image: url(/images/home-banner-texture.png);
+    padding: 100px 0 0;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+.home-banner h1 {
+    font-family: 'Airborne';
+    font-size: 76px;
+    font-weight: 500;
+    transform: rotate(-9deg)
+}
+
+.home-banner h3 {
+    font-family: 'Tarmiles Action PERSONAL USE';
+    font-size: 55px;
+    line-height: 55px;
+    font-weight: 500;
+    color: #9F272A;
+    transform: rotate(-9deg)
+}
+
+.home-banner h2 {
+    font-family: 'Airborne';
+    font-size: 110px;
+    line-height: 110px;
+    font-weight: 500;
+    transform: rotate(-9deg)
+}
+
+.home-banner .bordered-badge {
+    position: relative;
+    font-family: 'DIN Pro';
+    transform: rotate(-9deg);
+    font-style: italic;
+    font-weight: 700;
+    padding: 5px 20px;
+    width: fit-content;
+    margin-top: 20px;
+    display: block;
+}
+
+.home-banner .bordered-badge::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #9F272A;
+    transform: skewX(-15deg);
+}
+
+.home-banner .bordered-badge span:nth-child(2) {
+    color: #9F272A;
+}
+
+.home-banner .player-img {
+    transform: translateX(200%);
+    transition: all 0.5s ease-in-out;
+    animation: player-slide-in-up 1s forwards;
+}
+
+.home-banner .smoke-img {
+    transform: scale(0);
+    opacity: 0;
+    margin-top: 150px;
+    pointer-events: none;
+    animation: smoke-reveal 3s forwards 2s;
+}
+
+.home-banner .banner-btn {
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+    gap: 10px;
+}
+
+.home-banner .banner-btn span {
+    position: relative;
+    font-family: 'DIN Pro';
+    color: #fff;
+    z-index: 1;
+    padding: 5px 20px;
+
+}
+
+.home-banner .banner-btn .content-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #9F272A;
+    z-index: -1;
+    transform: skewX(-15deg);
+}
+
+.home-banner .banner-btn .price-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #fff;
+    z-index: -1;
+    transform: skewX(-15deg);
+}
+
+@keyframes player-slide-in-up {
+    0% {
+        transform: translateX(200%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes smoke-reveal {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(2);
+        opacity: 1;
+    }
+}
+
+.animated-product {
+    position: absolute;
+    width: 5px;
+    height: 0;
+    top: calc(50% + 150px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.animated-product img {
+    width: 600px;
+    height: 600px;
+    border-radius: 5px;
+    object-fit: contain;
+}
+
+
+
+.feature-stack .featured-card {
+    position: relative;
+}
+
+.feature-stack .featured-card .content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 20px;
+}
+
+.feature-stack .featured-card .content .price {
+    font-family: 'DIN Pro';
+    color: #9F272A;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+/* 
+    font-family: 'DIN Pro';
+    font-family: 'Airborne';
+    font-family: 'Tarmiles Action PERSONAL USE';
+*/

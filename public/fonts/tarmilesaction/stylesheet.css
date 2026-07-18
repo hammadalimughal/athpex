@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Tarmiles Action PERSONAL USE';
+    src: url('TarmilesActionPERSONALUSE-Regular.woff2') format('woff2'),
+        url('TarmilesActionPERSONALUSE-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+
+
+.container {
+    @apply mx-auto px-4;
+}
+
+body {
+    color: #fff;
+    background-color: #000;
+}
+
+button{
+    cursor: pointer;
+}
+
+p{
+    font-family: 'DIN Pro';
+    color: #948E89;
+    font-size: 16px;
+}
+
+h1 {
+    @apply text-4xl font-bold;
+    font-family: 'Airborne';
+    
+}
+
+.h2-airborne {
+    @apply text-4xl;
+    font-family: 'Airborne';
+}
+.h2-dine {
+    @apply text-4xl;
+    font-family: 'DIN Pro';
+}
+
+.h3-dine{
+    @apply text-3xl;
+    font-family: 'DIN Pro';
+}
+.h4-dine{
+    @apply text-xl;
+    font-family: 'DIN Pro';
+}
+.h4-airborne{
+    @apply text-xl;
+    font-family: 'Airborne';
+}
