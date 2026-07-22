@@ -1,6 +1,7 @@
 import React from 'react'
 import InnerBanner from '../components/InnerBanner'
 import VideoTestimonials from '../components/VideoTestimonials'
+import Testimonials from '../components/Testimonials'
 import FAQ from '../components/FAQ'
 
 const steps = [
@@ -138,6 +139,7 @@ const CommunityAmbassador = () => {
           </div>
         </div>
       </section>
+      <Testimonials />
       <VideoTestimonials />
       <FAQ />
     </>

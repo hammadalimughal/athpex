@@ -24,7 +24,13 @@ export default function VideoTestimonials() {
     return (
         <div className="relative w-full bg-black px-12 py-16 text-white select-none">
             <div className="max-w-7xl mx-auto relative group">
-
+                <div className="max-w-4xl mx-auto mb-10 text-center">
+                        <h6 className="tagline">Community / Ambassador</h6>
+                    <h2 className="h2-airborne my-3">Join the ATHPEX Movement</h2>
+                    <p style={{color: '#fff'}}>ATHPEX is more than a supplement company. It is a performance lifestyle brand for people who refuse to settle for average.
+When you choose ATHPEX, you become part of a community that trains hard, supports one another, and chases greatness every day.
+Our Ambassador Program rewards passionate athletes and influencers who proudly represent the brand.</p>
+                </div>
                 <Swiper
                     modules={[Navigation, Autoplay]}
                     spaceBetween={16}

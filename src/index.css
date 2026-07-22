@@ -11,11 +11,11 @@ body {
     background-color: #000;
 }
 
-button{
+button {
     cursor: pointer;
 }
 
-p{
+p {
     font-family: 'DIN Pro';
     color: #948E89;
     font-size: 16px;
@@ -24,27 +24,74 @@ p{
 h1 {
     @apply text-4xl font-bold;
     font-family: 'Airborne';
-    
+
 }
 
 .h2-airborne {
     @apply text-4xl;
     font-family: 'Airborne';
 }
+
 .h2-dine {
     @apply text-4xl;
     font-family: 'DIN Pro';
 }
 
-.h3-dine{
+.h3-dine {
     @apply text-3xl;
     font-family: 'DIN Pro';
 }
-.h4-dine{
+
+.h3-airborne {
+    @apply text-3xl;
+    font-family: 'Airborne';
+}
+
+.h4-dine {
     @apply text-xl;
     font-family: 'DIN Pro';
 }
-.h4-airborne{
+
+.h4-airborne {
     @apply text-xl;
     font-family: 'Airborne';
+}
+
+.h5-dine {
+    @apply text-lg;
+    font-family: 'DIN Pro';
+}
+
+.h5-airborne {
+    @apply text-lg;
+    font-family: 'Airborne';
+}
+
+.tagline{
+    font-family: 'DIN Pro';
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.btn {
+    display: inline-flex;
+    width: fit-content;
+    padding: 10px 25px;
+    border-radius: 30px;
+}
+
+.btn-primary {
+    background-color: #98B4E7;
+    color: #000;
+    font-family: 'DIN Pro';
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.btn-secondary {
+    background-color: transparent;
+    border: 1px solid #98B4E7;
+    color: #98B4E7;
+    font-family: 'DIN Pro';
+    font-weight: 500;
+    text-transform: uppercase;
 }

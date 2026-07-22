@@ -47,6 +47,9 @@
     align-items: center;
 }
 
+.main-header .navbar-nav.icon-nav li a {
+    font-size: 20px;
+}
 .inner-banner {
     background-size: cover;
     background-position: center center;
@@ -378,6 +381,195 @@
     color: #9F272A;
     font-weight: 700;
     font-size: 20px;
+}
+
+.pre-workout-section .key-benefits .label{
+    font-family: 'DIN Pro';
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #98B4E7;
+}
+.pre-workout-section .key-benefits ul li{
+    position: relative;
+    font-family: 'DIN Pro';
+    font-size: 18px;
+    line-height: 30px;
+    padding-left: 25px;
+}
+.pre-workout-section .key-benefits ul li::before{
+    content: '';
+    position: absolute;
+    background-image: url(/images/check-icon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 15px;
+    width: 15px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.pre-workout-section .price-wrap .price-label{
+    color: #9F272A;
+    font-family: 'DIN Pro';
+    display: block;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.pre-workout-section .price-wrap .price-value{
+    font-family: 'DIN Pro';
+    display: block;
+    margin-bottom: 15px;
+}
+.pre-workout-section .product-offer{
+    font-family: 'DIN Pro';
+    display: block;
+    color: #9F272A;
+    font-size: 20px;
+}
+
+.why-choose-home{
+    background-color: #0C0C0C;
+}
+
+.why-choose-home .accordion-wrapper .accordion-item .accordion-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.why-choose-home .accordion-wrapper .accordion-item .accordion-header:nth-child(1){
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.why-choose-home .accordion-wrapper .accordion-item .accordion-header .accordion-title{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'DIN Pro';
+    font-size: 20px;
+    color: #fff;
+}
+.why-choose-home .accordion-wrapper .accordion-item .accordion-content{
+    padding: 15px 0;
+    font-family: 'DIN Pro';
+    color: #948E89;
+}
+
+.call-to-action-section .content-wrapper{
+    background-image: url(/images/cta-bg.png);
+    border-radius: 0 0 50px 50px;
+    border-bottom: 4px solid #9F272A;
+}
+.call-to-action-section .content-wrapper h2{
+    @apply text-5xl
+}
+
+.built-to-perform .build-platform-listing{
+    background-color: rgba(255,255,255,0.08);
+    padding: 20px;
+}
+
+.card-supplements-detail{
+    background-color: #141414;
+    padding: 20px;
+}
+.card-supplements-detail .info-supplement{
+    display: block;
+    font-size: 14px;
+    font-family: 'DIN Pro';
+    color: #888888;
+}
+.card-supplements-detail table thead tr{
+    border-bottom: 1px solid #6C6C6C;
+
+}
+.card-supplements-detail table tbody tr{
+    border-bottom: 1px solid #1B1B1B;
+    font-family: 'DIN Pro';
+
+}
+.card-supplements-detail table th,
+.card-supplements-detail table td{
+    font-family: 'DIN Pro';
+    font-size: 14px;
+    color: #fff;
+    padding: 5px 5px;
+}
+.card-supplements-detail p{
+    font-size: 14px;
+}
+
+.pre-workout-section .guide-steps .step{
+    background-color: #141414;
+    padding: 10px 20px;
+}
+/* .pre-workout-section .guide-steps .step: */
+.pre-workout-section .guide-steps .step .numbers{
+    font-family: 'DIN Pro';
+    font-weight: 600;
+    font-size: 20px;
+    color: #9F272A;
+    font-weight: 700;
+}
+.pre-workout-section .warning-section{
+    border: 1px solid rgba(255, 59, 48, 0.4);
+    background: rgba(255, 59, 48, 0.05);
+    padding: 10px 20px;
+}
+.pre-workout-section .warning-section .warning-text{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #FF3B30;
+    font-family: 'DIN Pro';
+    
+}
+.pre-workout-section .warning-section .warning-points {
+    padding-left: 20px;
+}
+.pre-workout-section .warning-section .warning-points li{
+    font-family: 'DIN Pro';
+    font-size: 16px;
+    color: #888888;
+    /* padding-left: 20px; */
+    position: relative;
+    list-style: disc;
+}
+.pre-workout-section .warning-section .warning-points li strong{
+    color: #fff;
+}
+
+.goal-card,
+.train-with-confidence-card{
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+.what-set-apart ul li{
+    position: relative;
+    font-family: 'DIN Pro';
+    font-size: 18px;
+    line-height: 30px;
+    padding-left: 25px;
+}
+.what-set-apart ul li::before{
+    content: '';
+    position: absolute;
+    background-image: url(/images/check-icon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 15px;
+    width: 15px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 /* 

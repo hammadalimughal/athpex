@@ -4,6 +4,11 @@ import gsap from 'gsap';
 import * as THREE from 'three';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import PreWorkout from '../components/PreWorkout';
+import WhyChooseHome from '../components/WhyChooseHome';
+import VideoTestimonials from '../components/VideoTestimonials';
+import Testimonials from '../components/Testimonials';
+import CallToAction from '../components/CallToAction';
 gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
@@ -81,22 +86,24 @@ const Home = () => {
         }
       });
 
-      scrollTl.fromTo(containerRef.current, {
-        width: 600,
-        height: 600,
-        rotate: -9,
-        x: 0,
-        y: 0,
-        borderRadius: "0px"
-      }, {
-        x: getDeltaX,
-        y: getDeltaY,
-        width: getTargetWidth,
-        height: getTargetHeight,
-        rotate: 0,
-        borderRadius: "16px",
-        ease: "none"
-      }, 0)
+      scrollTl.fromTo(containerRef.current,
+        {
+          width: 600,
+          height: 600,
+          rotate: -9,
+          x: 0,
+          y: 0,
+          borderRadius: "0px"
+        },
+        {
+          x: getDeltaX,
+          y: getDeltaY,
+          width: getTargetWidth,
+          height: getTargetHeight,
+          rotate: 0,
+          borderRadius: "16px",
+          ease: "none"
+        }, 0)
         .fromTo(imgRef.current, {
           // width: 400,
           // height: 400,
@@ -167,7 +174,11 @@ const Home = () => {
           </div>
         </div>
       </section>
-      
+      <PreWorkout />
+      <WhyChooseHome />
+      <Testimonials />
+      <VideoTestimonials />
+      <CallToAction />
     </>
   )
 }

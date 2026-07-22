@@ -2,6 +2,7 @@ import { Search } from 'lucide-react'
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import $ from 'jquery'
+import { AiOutlineUser, AiOutlineShoppingCart  } from "react-icons/ai";
 
 const Header = () => {
   const [scroll, setScroll] = useState('main-header')
@@ -23,18 +24,15 @@ const Header = () => {
           </Link>
           <ul className="navbar-nav">
             <li> <Link to="/" className="nav-link">Hero</Link></li>
-            <li> <Link to="/" className="nav-link">Flagship Product</Link></li>
-            <li> <Link to="/" className="nav-link">Why Athpex Supplements</Link></li>
+            <li> <Link to="/flagship-product" className="nav-link">Flagship Product</Link></li>
+            <li> <Link to="/why-athpex-supplements" className="nav-link">Why Athpex Supplements</Link></li>
             <li> <Link to="/community-ambassador" className="nav-link">Community / Ambassador</Link></li>
-            <li> <Link to="/" className="nav-link">Our Standard</Link></li>
-            <li> <Link to="/" className="nav-link">Contact Us</Link></li>
+            <li> <Link to="/our-standard" className="nav-link">Our Standard</Link></li>
+            <li> <Link to="/contact-us" className="nav-link">Contact Us</Link></li>
           </ul>
-          <ul className="navbar-nav">
-            <li> <Link to="/" className="nav-link"><Search /> Search</Link></li>
-            <li> <Link to="/" className="nav-link">Quiz</Link></li>
-            <li> <Link to="/" className="nav-link">Learn</Link></li>
-            <li> <Link to="/" className="nav-link">Account</Link></li>
-            <li> <Link to="/" className="nav-link">Cart</Link></li>
+          <ul className="navbar-nav icon-nav">
+            <li> <Link to="/" title="Account" className="nav-link"><AiOutlineUser /></Link></li>
+            <li> <Link to="/checkout" title="Checkout" className="nav-link"><AiOutlineShoppingCart /></Link></li>
           </ul>
 
         </div>
