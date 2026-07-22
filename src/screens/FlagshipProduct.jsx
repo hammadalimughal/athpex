@@ -39,7 +39,7 @@ const FlagshipProduct = () => {
             <section className="atomic-blast pb-20">
                 <div className="container text-center">
                     <h2 className="h2-dine mb-5">Why Atomic Blast?</h2>
-                    <div className="grid grid-cols-4 gap-5">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
                         {atomicBlastFeatures.map((feature, index) => (
                             <div className="col-span-1" key={index}>
                                 <div className="atomic-blast-card">

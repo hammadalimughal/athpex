@@ -10,5 +10,16 @@ export default defineConfig(({ mode }) => ({
     babel({ presets: [reactCompilerPreset()] }),
     tailwindcss()
   ],
-  base: mode === 'production' ? '/athpex/' : '/'
+  server: {
+    proxy: {
+      '/api': {
+        target: 'http://localhost:8756',
+        changeOrigin: true
+      },
+      '/uploads': {
+        target: 'http://localhost:8756',
+        changeOrigin: true
+      }
+    }
+  }
 }))

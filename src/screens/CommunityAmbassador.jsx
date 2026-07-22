@@ -37,9 +37,9 @@ const CommunityAmbassador = () => {
             Four steps from
             here to ambassador.
           </h2>
-          <div className="grid grid-cols-4 gap-5 mt-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-4">
             {steps.map((step, index) => (
-              <div className="col-span-1">
+              <div className="col-span-1" key={index}>
                 <div className="step-card flex flex-col gap-2">
                   <span className="index text-2xl">{step.index}</span>
                   <h4 className="h4-airborne">{step.title}</h4>
@@ -53,7 +53,7 @@ const CommunityAmbassador = () => {
       </section>
       <section className="ambassador-application pb-20">
         <div className="container">
-          <div className="grid grid-cols-2 gap-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
             <div className="col-span-1">
               <img className="sticky top-30" src="/images/ambassador-featured.png" alt="Pre Workout Atomic Blast" />
             </div>

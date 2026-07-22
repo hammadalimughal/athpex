@@ -22,7 +22,7 @@ const WhyChooseHome = () => {
     return (
         <section className="why-choose-home py-20">
             <div className="container">
-                <div className="grid grid-cols-2 gap-5">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                     <div className="col-span-1 flex flex-col justify-center">
                         <h6 className="tagline">Why Choose Us</h6>
                         <h2 className="h2-dine uppercase">Built for Those Who Chase Greatness</h2>
@@ -43,7 +43,7 @@ const WhyChooseHome = () => {
                         </div>
                     </div>
                     <div className="col-span-1">
-                        <img className="rounded-2xl" src="/images/why-choose-home.png" alt="" />
+                        <img className="rounded-2xl w-full h-auto object-cover" src="/images/why-choose-home.png" alt="" />
                     </div>
                 </div>
             </div>

@@ -64,10 +64,10 @@ const WhyAthpexSupplements = () => {
             <section className="train-with-confidence py-20">
                 <div className="container">
                     <h2 className="h2-dine mb-5 text-center">SIX REASONS TO TRAIN WITH CONFIDENCE</h2>
-                    <div className="grid grid-cols-3 gap-5">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
                         {trainWithConfidence.map((item, ind) => (
-                            <div className="col-span-1">
-                                <div className="train-with-confidence-card flex flex-col gap-3 items-start" key={ind}>
+                            <div className="col-span-1" key={ind}>
+                                <div className="train-with-confidence-card flex flex-col gap-3 items-start">
                                     <img src={item.icon} alt={item.title} />
                                     <h4 className="h5-dine">{item.title}</h4>
                                     <p>{item.description}</p>
@@ -79,9 +79,9 @@ const WhyAthpexSupplements = () => {
             </section>
             <section className="what-set-apart pb-20">
                 <div className="container">
-                    <div className="grid grid-cols-2 gap-5">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                         <div className="col-span-1">
-                            <img src="/images/what-set-apart.png" alt="WHAT SETS US APART" />
+                            <img className="w-full h-auto object-cover rounded-2xl" src="/images/what-set-apart.png" alt="WHAT SETS US APART" />
                         </div>
                         <div className="col-span-1 flex flex-col justify-center">
                             <h2 className="h2-dine mb-5">WHAT SETS US APART?</h2>
@@ -101,16 +101,14 @@ const WhyAthpexSupplements = () => {
             <section className="your-goal-our-formula pb-20">
                 <div className="container">
                     <h2 className="h2-dine text-center mb-5">YOUR GOAL. OUR FORMULA.</h2>
-                    <div className="grid grid-cols-4 gap-5">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
                         {goals.map((item, ind) => (
                             <div className="col-span-1" key={ind}>
-                                 <div className="col-span-1">
-                                <div className="goal-card flex flex-col gap-3 items-start" key={ind}>
+                                <div className="goal-card flex flex-col gap-3 items-start">
                                     <img src={item.icon} alt={item.title} />
                                     <h4 className="h5-dine">{item.title}</h4>
                                     <p>{item.description}</p>
                                 </div>
-                            </div>
                             </div>
                         ))}
                     </div>

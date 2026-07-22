@@ -144,7 +144,7 @@ const Home = () => {
             <h2 className="h2-airborne">Featured Stacks</h2>
             <p>Proven systems, tailored to your specific goals.</p>
           </div>
-          <div className="grid grid-cols-2 gap-10 mt-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
             <div className="col-span-1">
               <div className="featured-card">
                 <img
@@ -176,7 +176,6 @@ const Home = () => {
       </section>
       <PreWorkout />
       <WhyChooseHome />
-      <Testimonials />
       <VideoTestimonials />
       <CallToAction />
     </>

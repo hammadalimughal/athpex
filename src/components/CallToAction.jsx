@@ -7,9 +7,9 @@ const CallToAction = () => {
                 <div className="content-wrapper py-20">
                     <div className="max-w-xl mx-auto text-center">
                         <h2 className="h2-airborne">Ready to Fuel Your Greatness?</h2>
-                        <ul className="flex justify-center gap-4 mt-6">
-                            <li><button className="btn btn-primary">Get Started</button></li>
-                            <li><button className="btn btn-secondary">Become an Ambassador</button></li>
+                        <ul className="flex flex-col sm:flex-row justify-center gap-4 mt-6">
+                            <li><a href="/checkout" className="btn btn-primary w-full sm:w-auto">Get Started</a></li>
+                            <li><a href="/community-ambassador" className="btn btn-secondary w-full sm:w-auto">Become an Ambassador</a></li>
                         </ul>
                     </div>
                 </div>
